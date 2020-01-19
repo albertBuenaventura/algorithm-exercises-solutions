@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "allowUnreachableCode": false,
+      "baseUrl": ".",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noEmitOnError": true,
+      "noFallthroughCasesInSwitch": true,
+      "outDir": "./build",
+      "sourceMap": true,
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "target": "es6"
+    },
+    "include": ["data-structures/**/*", "algorithms/**/*"],
+    "exclude": [
+      "node_modules",
+      "build"
+    ]
+  }
+  
