@@ -1,6 +1,6 @@
 export class SingleLinkedList {
-    private head:SingleLinkedListNode
-    private tail:SingleLinkedListNode
+    public head:SingleLinkedListNode
+    public tail:SingleLinkedListNode
     
     prepend(value:number) : void {
         if(!this.head) {
@@ -48,9 +48,12 @@ export class SingleLinkedList {
 
     }
 
-    deleteTail() : void {
+    deleteTail() : SingleLinkedListNode {
+        const deletedTail = this.tail
+
         if(this.head == this.tail) {
             this.head = this.tail = (null as unknown) as SingleLinkedListNode;
+            return deletedTail
         }
         
         let current = this.head;
@@ -64,16 +67,20 @@ export class SingleLinkedList {
         }
 
         this.tail = current;
+        return deletedTail
     }
 
-    deleteHead() : void {
-        if(!this.head) return;
+    deleteHead() : SingleLinkedListNode {
+        if(!this.head) return (null as unknown) as SingleLinkedListNode;
 
+        const currentHead: SingleLinkedListNode = this.head;
         if(this.head.next) {
             this.head = this.head.next;
         } else {
             this.head = this.tail = (null as unknown) as SingleLinkedListNode;
         }
+
+        return currentHead;
     }
 
     printList() : void {
@@ -87,7 +94,7 @@ export class SingleLinkedList {
 }
 
 
-class SingleLinkedListNode {
+export class SingleLinkedListNode {
     public value:number;
     public next:SingleLinkedListNode;
     
@@ -95,24 +102,3 @@ class SingleLinkedListNode {
         this.value = value;
     }
 }
-
-//Sample Use
-(() =>  {
-    const singleLinkedList =  new SingleLinkedList();
-    
-    singleLinkedList.append(1);
-    singleLinkedList.prepend(2);
-    singleLinkedList.append(3);
-    singleLinkedList.prepend(4);
-    singleLinkedList.prepend(5);
-    singleLinkedList.append(6);
-    singleLinkedList.append(7);
-
-    singleLinkedList.delete(7);
-    singleLinkedList.delete(5);
-
-    singleLinkedList.deleteTail();
-    singleLinkedList.deleteHead();
-
-    singleLinkedList.printList();
-})()
