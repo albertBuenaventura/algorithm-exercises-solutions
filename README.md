@@ -16,3 +16,8 @@ In mathematics and computer science, an algorithm is a finite sequence of well-d
 * [LongestPath using DFS](algorithms/LongestPath.ts)
 * [Combinations (Recursive)](algorithms/Combinations.ts)
 
+
+## Leetcode Solutions
+
+Leetcode solutions using Javascript, Typescript, Java or Python whichever I prefer to use. 
+
