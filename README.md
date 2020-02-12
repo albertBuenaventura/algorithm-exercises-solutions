@@ -1,4 +1,4 @@
-# JavaScript/TypeScript Algorithms and Data Structures (For Studying purposes)
+# JavaScript/TypeScript/Java/Python Algorithms and Data Structures (For Studying purposes)
 
 ## Data Structures
 
