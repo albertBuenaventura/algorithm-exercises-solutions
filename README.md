@@ -15,6 +15,7 @@ In mathematics and computer science, an algorithm is a finite sequence of well-d
 
 * [LongestPath using DFS](algorithms/LongestPath.ts)
 * [Combinations (Recursive)](algorithms/Combinations.ts)
+* [Fibonacci Sequence](algorithms/Fibonacci.ts)
 
 
 ## Leetcode Solutions
