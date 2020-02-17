@@ -18,7 +18,7 @@ const fibonacci = (range:number):number[] => {
     return sq;
 }
 
-const fibonacciWithStartingPoint = (start:number, range:number) => {
+const fibonacciWithStartingPoint = (start:number, range:number):number[] => {
     const sq:number[] = [start]
 
     let current:number = start
