@@ -33,3 +33,7 @@ In mathematics and computer science, an algorithm is a finite sequence of well-d
 
 Leetcode solutions using Javascript, Typescript, Java or Python whichever I prefer to use. 
 
+
+## License
+This project is licensed under the terms of the [MIT](LICENSE) license.
+
