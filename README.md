@@ -3,7 +3,7 @@
 ## How to run
 Note: To run TypeScript/Javascript classes, ensure you have Node environment installed on your machine.
 
-For TypeScript, install [ts-node](https://www.npmjs.com/package/ts-node) globally `npm install -g ts-node` then to run a code `ts-node algorithm/LongestPath.ts`
+For TypeScript, run `tsc algorithm/LongestPath.ts`
 
 For Javascript: run `node algorithm/LongestPath.ts`
 
