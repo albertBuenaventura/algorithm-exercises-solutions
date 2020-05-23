@@ -10,9 +10,9 @@ public class NumberOfIslands {
         {'1','1','0','1','0'},
         {'1','1','0','0','0'},
         {'0','0','0','0','0'}
-    };
+      };
 	
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 		System.out.println(numIslands(grid));
 	}
     
@@ -21,19 +21,20 @@ public class NumberOfIslands {
  		
 		numberOfIslands = 0;
 		n = grid.length;
-        m = grid[0].length;
+    m = grid[0].length;
 		
 		visited = new boolean[n][m];
 		for(int x=0; x<n; x++) {
 			for(int y=0; y<m; y++) {
 				if (!visited[x][y] && grid[x][y] == '1') {
 					BFS(grid, x, y);
-                    numberOfIslands++;
-                }
+          numberOfIslands++;
+        }
 			}
 		}
-		return numberOfIslands;
-    }
+		
+    return numberOfIslands;
+  }
 	
 	static void BFS(char[][] grid, int x, int y) {
 		visited[x][y] = true;
