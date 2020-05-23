@@ -5,10 +5,17 @@ public class NumberOfIslands {
 	static boolean[][] visited;
 	static int numberOfIslands;
 	static int n, m;
-	static char[][] grid = {{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}};
-	public static void main(String[] args) {
+	static char[][] grid = {
+        {'1','1','1','1','0'},
+        {'1','1','0','1','0'},
+        {'1','1','0','0','0'},
+        {'0','0','0','0','0'}
+    };
+	
+    public static void main(String[] args) {
 		System.out.println(numIslands(grid));
 	}
+    
  	public static int numIslands(char[][] grid) {
  		if(grid == null || grid.length == 0) return 0;
  		
